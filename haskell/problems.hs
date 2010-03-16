@@ -10,3 +10,9 @@ problem_2 = sum [x|x <- f [1,1], even x]
 
 -- Problem 4
 problem_4 = maximum [z|x<-[100..999],y<-[x..999],let z =x*y, show z == reverse( show z)]
+
+-- Problem 5
+problem_5 = foldl1 lcm [1..20]
+
+-- Problem 6
+problem_6 = sum[1..100]^2 - sum [x^2|x<-[1..100]]
